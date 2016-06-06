@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "dependencies": {
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "narou-middleware": "^0.1.0"
+  }
+}
