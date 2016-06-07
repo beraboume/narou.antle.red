@@ -1,0 +1,18 @@
+$book_style_content = '*:first-child'
+$book_style_navigation = '*:nth-child(2)'
+fixed-flex-book-style(bottom_height)
+  > {$book_style_content}
+    height calc(100vh \- bottom_height)
+
+  > {$book_style_navigation}
+    position fixed
+    margin-top calc(100vh \- bottom_height)
+    top 0
+    left 0
+    right 0
+    height bottom_height
+
+hide-navigation()
+  > {$book_style_navigation}
+    transform scaleY(0)
+    overflow hidden

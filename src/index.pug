@@ -1,0 +1,42 @@
+include /_layout/index
+  input(id="drawer_show" type="checkbox" checked)
+  #narou
+    #page 1
+    article.content
+      section
+        include /n9669bk-1.txt
+
+    #drawer
+      label.overlay(for='drawer_show')
+      .toc
+        h1
+          | 無職転生　- 異世界行ったら本気だす -
+        small 理不尽な孫の手
+
+        section
+          include /toc
+
+    footer
+      form.controls
+        div
+          button
+            ruby
+              | すこし左へ
+              rt space/enter
+        button(disabled)
+          ruby
+            | ←次のページ
+            rt z/j
+        span 1 / 286
+        button
+          ruby
+            | 前のページ→
+            rt x/k
+        div
+          label(for='drawer_show')
+            ruby
+              | メニュー
+              rt c/esc
+
+      aside.thanks
+        h1 narou.berabou.me

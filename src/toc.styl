@@ -1,0 +1,59 @@
+#narou .toc
+  label
+    cursor pointer
+  input[type="radio"]
+    display none
+    & + *
+      ul
+        transform-origin top
+        // transition max-height .5s ease
+    &:not(:checked) + *
+      ul
+        transform scaleY(0)
+        max-height 0
+        overflow hidden
+    &:checked + *
+      h2
+      .active a
+        font-weight bold
+        color #933!important
+        text-decoration underline
+
+    &:checked + *
+      ul
+        transition transform .5s ease
+        transform scaleY(100%)
+        max-height auto
+
+        padding-bottom 1em
+
+#narou .toc
+  padding 1em
+
+  h1
+    vh-font-md()
+  small
+    vh-font-xs()
+    display block
+    text-align right
+    margin .25em
+
+  section
+    padding 1em 0.5em
+    label
+      display inline-block
+      // padding .5em 0
+      h2
+        vh-font-sm()
+      ul
+        padding .5em 0
+        li
+          a
+            vh-font-xs()
+
+          a:visited
+            color #ccc
+
+#narou .toc .thanks
+  text-align center
+  padding 1rem 0
